@@ -1,0 +1,190 @@
+.footer{
+    width: 100%;
+    height: 100%;
+    background-color: @black;
+   
+    .container {
+        padding: 0;
+        width: 100%;
+        max-width: 1140px;
+        position: relative;
+        height: 100%;
+    }
+    &--top{
+        padding-top: 5.5%;
+        max-height: 100%;
+        width: 100%;
+    }
+    &__aboutus{
+        color: @text-header;
+        &__title h4{
+            font-size: 17px;
+            font-weight: 700;
+            color: white;
+            margin-left: -3px;
+        }
+        .line1{
+            border-bottom: 1px #393939 solid;
+            margin-top: 26px;
+            width: 90%;
+        }
+        &__content{
+            margin: 24px 0px;
+            font-size: 13px;
+            letter-spacing: 0px;
+            line-height: 22px;
+            word-spacing: 2px;
+            width: 71%;
+        }
+        &__icon {
+          ul{
+                list-style: none;
+                margin: 14px 0px;   
+                li{
+                    display: inline-block;
+                    margin: 0px 14px;
+                    padding: 14px 0px;
+              }
+              li:nth-child(1){
+                  margin-left: 0px;
+              }
+          }
+          
+        }
+    }
+    &__navigation{
+        &__title h4{
+            font-size: 17px;
+            font-weight: 700;
+            color: white;
+            margin-left: -3px;
+        }
+        .line2{
+            border-bottom: 1px #393939 solid;
+            margin-top: 26px;
+            width: 79%;
+        }
+        &__content{
+            ul{  
+              margin: 24px 0px;
+            //   padding: 0 6px;
+            }
+            ul li{
+                list-style: none;
+                color: @text-header;
+                font-size: 13px;
+                line-height: 29px;
+                word-spacing: -2px;
+                a{
+                    color:@white;
+                    text-decoration: revert;
+                }
+               
+            }
+            &--right{
+                padding: 0 6px;
+            }
+        }
+    }
+    &__address{
+        color: @text-header;
+        &__title h4{
+            font-size: 17px;
+            font-weight: 700;
+            color: white;
+            margin-left:-3px ;
+        }
+        .line3{
+            border-bottom: 1px #393939 solid;
+            margin-top: 26px;
+            width: 100%;
+        }
+        ul {
+            margin: 25px 0px;
+            line-height: 33px;
+            font-size: 13px;
+            li {
+                list-style: none;
+            }
+            
+        }
+        .address--icon {
+            ul{
+                li{
+                    margin: 2px 0;
+                }
+            }
+        }
+        .address {
+            ul{
+                li{
+
+                    line-height: 31px;
+                    width: 93%;
+                    word-spacing: 1px;
+                    margin: 0 -8%;
+                }
+            }
+        }
+        
+    }
+    &--bottom{
+        
+        color: grey;
+        padding-top: 3.5%;
+        font-size: 14px;
+        width: 100%;
+        address{
+            word-spacing: -0.5px; 
+        }
+        &__payment{
+            ul li{
+                list-style: none;
+                display: inline-block;
+                font-size: 21px;
+                margin-left: 4px;
+                margin-top: -7px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 992px){
+    .footer{
+        &__aboutus{
+            .line1{
+                width: 100%;
+            }
+        }
+        &__navigation{
+            .line2{
+                width: 100%;
+            }
+        }
+        &__address{
+            .line3{
+                width: 100%;
+            }
+            .address{
+                ul{
+                    li{
+                        margin: 2% -8%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and(max-width: 576px){
+    .footer{
+        &__address{
+            .address{
+                ul{
+                    li{
+                        margin:3% -8%;
+                    }
+                }
+            }
+        }
+    }
+}

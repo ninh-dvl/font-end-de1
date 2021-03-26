@@ -1,0 +1,256 @@
+// /*<-----------------------------------3.1 Home_page_content--------------------------------------------->*/
+.container{
+    width: 100%;
+    max-width: 1140px;
+    padding: 0;
+}
+.banner{
+    &__img{
+        max-height: 100%;
+        position: relative;
+        padding-top: 2.6%;
+        &__left{
+            &__content{
+                position: absolute;
+                top: 56.5%;
+                left: 45%;
+                letter-spacing: -1px;
+                line-height: 52px;
+                h2{
+                    font-family: @font-pacifico;
+                }
+                .btn-shop{
+                    color: white;
+                    border: 1px solid transparent;
+                    padding: 10px 16px;
+                    background: @text-color;
+                    margin-left: 215px;
+                    text-decoration: none;
+                    font-size: 15px;
+                }
+            }
+        }
+        &__right{
+            height: 100%;
+            .right--img{
+                height: 100%;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            &--top{
+                position: relative;
+                &__title{
+                    position: absolute;
+                    top: 43%;
+                    left: 15%;
+                    h3{
+                        font-size: 17px;
+                        letter-spacing: 2.5px;
+                        margin: 0;
+                    }
+                    h2{
+                        font-size: 20px;
+                        letter-spacing: 1.4px;
+                        font-family: @font-openSan;
+                        font-weight: 900;
+                    }
+                }
+            }
+            &--bottom{
+                &__title{
+                    position: absolute;
+                    top: 63%;
+                    left: 14%;
+                    h3{
+                        font-size: 17px;
+                        letter-spacing: 2.5px;
+                        margin: -1px;
+                    }
+                    h2{
+                        font-size: 21px;
+                        letter-spacing: 0.5px;
+                        font-family: @font-openSan;
+                        font-weight: 900;
+                    }
+                    .btn-shop--bottom{
+                        font-size: 14px;
+                        margin: 5px 3px;
+                        color:@white;
+                        border: transparent;
+                        background: @text-color;
+                        padding: 11px 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+.product{
+    margin-top:4.2%;
+    &__title{
+        h6{
+            letter-spacing: 4px;
+            font-size: 14px;
+            color: @text-color;
+            margin-top: -5px;
+            margin-bottom: 13px;
+        }
+        h3{
+            font-size: 22px;
+            letter-spacing: 3.5px;
+        }
+        .product--line{
+            border: 0.1px solid @text-color;
+            width: 4.5%;
+            margin: 24px 0;
+            
+        }
+    }
+    &__list1{
+        margin-top: 4.5%;
+    }
+    &__list2{
+        margin-top: 2%;
+    }
+    &__content{
+            &__detail{
+                padding: 7% 0;
+                .card-title{
+                    letter-spacing: -0.8px;
+                    font-weight: 700;
+                    margin-left: -3px;
+                    margin-bottom: 7px;
+                    font-size: 15px;
+                }
+                &__evaluate{
+                    font-size: 12px;
+                    margin-left: -3px;
+                    color: @yellow;
+                    word-spacing: -2px;
+                    .star--final{
+                       color:#d4d4d4;
+                    }
+                }
+                &__price{
+                    font-size: 14px;
+                    line-height: 30px;
+                    &--old{
+                        color: @price;
+                    }
+                    .price--old__line{
+                        width: 17%;
+                        color: @price;
+                        position: absolute;
+                        top: 91.7%;
+                        border: 0.1px solid;
+                    }
+                    &--real{
+                        color:@text-color;
+                        font-weight: bold;
+                    }         
+                }
+            }
+    }
+    .card{
+        border: none;
+    }
+    .card-img-overlay{
+        top: 59.5%;
+        left: 0.5%;
+        .add-to-cart{
+            background-color:@white;
+            font-size: 12px;
+            padding: 11px 16px;
+            border: none;
+            font-weight: 600;
+            word-spacing: -0.5px;
+         
+        }
+    }     
+    
+}
+@media all  and (max-width: 992px){
+    .banner{
+        &__img{
+            &__left{
+                &__content{
+                    top:59.5%;
+                    h2{
+                        font-size: 40px;
+                    }
+                    .btn-shop{
+                        font-size: 20px;
+                    }
+                }
+            }
+            &__right{
+                .right--img{
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin-top: 1%;
+                }
+                &--top{
+                    max-height: 100%;
+                    img{
+                        min-height: 96%;
+                        width: 100%;
+                    }
+                }
+                &--bottom{
+                    &__title{
+                        top: 40%;
+                        left: 60%;
+                    }
+                }
+            }
+        }
+    }
+    .product{
+        &__title{
+            margin-left: 3%;
+        }
+        &__content{
+            &__detail{
+                &__price{
+                    .price--old__line{
+                        width: 10%;
+                        top:93.3%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 576px){
+    .banner{
+        &__img{
+            &__left{
+                &__content{
+                    h2{
+                        font-size: 26px;
+                    }
+                    .btn-shop{
+                        font-size: 17px;
+                        margin-left: 28%;
+                    }
+                }
+            }
+            &__right{
+                &--top{
+                    width: 100%;
+                }
+                &--bottom{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                        max-height: 70%;
+                    }
+                    &__title{
+                        top: 50%;
+                        left: 20%;
+                    }
+                }
+            }
+        }
+    }
+}
