@@ -138,6 +138,7 @@
             word-spacing: -0.5px; 
         }
         &__payment{
+            text-align: right;
             ul li{
                 list-style: none;
                 display: inline-block;
@@ -173,6 +174,12 @@
                 }
             }
         }
+        &--top,&--bottom{
+            .row{
+                max-width: 100%;
+                margin: 0;
+            }
+        }
     }
 }
 @media all and(max-width: 576px){
@@ -184,6 +191,15 @@
                         margin:3% -8%;
                     }
                 }
+            }
+        }
+    }
+}
+@media all and(max-width:376px){
+    .footer{
+        &--bottom{
+            &__payment{
+                text-align: center;
             }
         }
     }
