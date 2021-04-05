@@ -48,6 +48,9 @@
                     a{
                         color: #888888;
                     }
+                    a:hover{
+                        color: @white;
+                    }
               }
               li:nth-child(1){
                   margin-left: 0px;
@@ -86,6 +89,10 @@
                 a{
                     color: #888888;
                 }
+                a:hover{
+                    color: @white;
+                    text-decoration: none;
+                }
                 .active{
                     color:@white;
                     text-decoration: revert;
@@ -119,6 +126,10 @@
                 list-style: none;
                 a{
                     color: #888888;
+                }
+                a:hover{
+                    color: @white;
+                    text-decoration: none;
                 }
             }
             
@@ -170,6 +181,10 @@
 
                     color: #888888;
                 }
+                a:hover{
+                    color: @white;
+                    
+                }
             }
         }
     }
@@ -207,8 +222,35 @@
         }
     }
 }
-@media all and(max-width: 576px){
+@media all and(max-width:993px){
     .footer{
+        &__navigation{
+            &__content{
+                .list2{
+                    margin-top: 11%;
+                    
+                }
+                &--left{
+                    padding-left:0 ;
+                }
+            }
+        }
+    }
+}
+@media all and(max-width: 577px){
+    .footer{
+        &--bottom{
+            address{
+                font-size: 12px;
+                text-align: center;
+            }
+            .row{
+                flex-direction: column-reverse;
+            }
+            &__payment{
+                text-align: center;
+            }
+        }
         &__address{
             .address{
                 ul{
@@ -238,10 +280,7 @@
             ul {
                 margin: 22px 0px;
                 line-height: 43px;
-                font-size: 13px;
-                
-              
-                
+                font-size: 13px;         
             }
            
           

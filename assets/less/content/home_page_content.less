@@ -160,19 +160,21 @@
     .card{
         border: none;
     }
-    .card-img-overlay{
-        top: 59.5%;
-        left: 0.5%;
-        .add-to-cart{
-            background-color:@white;
-            font-size: 12px;
-            padding: 11px 16px;
-            border: none;
-            font-weight: 600;
-            word-spacing: -0.5px;
-         
-        }
-    }     
+    .card-img-top{
+        .card-img-overlay{
+            top: 59.5%;
+            left: 0.5%;
+            .add-to-cart{
+                background-color:@white;
+                font-size: 12px;
+                padding: 11px 16px;
+                border: none;
+                font-weight: 600;
+                word-spacing: -0.5px;
+             
+            }
+        }     
+    }
     
 }
 @media all and(min-width:1025px){
@@ -209,8 +211,6 @@
             }
             &__right{
                 .right--img{
-                   
-                   
                     margin-top: 1%;
                 }
                 &--top{
@@ -234,9 +234,11 @@
         }
     }
     .product{
-        .card-img-overlay{
-            top: 52.5%;
-             left: 0.5%;
+        .card-img-top{
+            .card-img-overlay{
+                top: 52.5%;
+                 left: 0.5%;
+            }
         }
         &__title{
             margin-left: 3%;
@@ -259,7 +261,7 @@
         }
     }
 }
-@media all and (max-width:992px){
+@media all and (max-width:994px){
     .banner{
         .row{
             max-width: 100%;
@@ -281,6 +283,44 @@
             &__right1{
                 margin-top: 3%;
                 display: block;
+                &--top{
+                    height: 100%;
+                   
+                    img{
+                       width: 100%;
+
+                    }
+                }
+                &--bottom{
+                  
+                    img{
+                        height: 60%;
+                        width: 100%;
+                    }
+                    &__title{
+                        position: absolute;
+                        top: 20%;
+                        left: 10%;
+                        h3{
+                            font-size: 17px;
+                            letter-spacing: 2.5px;
+                            margin: -1px;
+                        }
+                        h2{
+                            font-size: 21px;
+                            letter-spacing: -1.5px;
+                            font-weight: 900;
+                        }
+                        .btn-shop--bottom{
+                            font-size: 14px;
+                            margin: 5px 3px;
+                            color:@white;
+                            border: transparent;
+                            background: @text-color;
+                            padding: 11px 18px;
+                        }
+                    }
+                }
             }
             &__right{
                display: none;
@@ -288,6 +328,13 @@
         }
     }
     .product{
+        margin-top: -10%;
+        .card-img-top{
+            .card-img-overlay{
+                top: 64.5%;
+                 left: 0.5%;
+            }
+        }
         &__content{
             &__detail{
                 &__price{
@@ -309,6 +356,9 @@
             &__right1{
                 display: block;
                 margin-top:3%;
+                &--top{
+                    margin-bottom: 3%;
+                }
             }
         }
 
@@ -380,16 +430,33 @@
         }
     }
 }
+@media all and (max-width:576px){
+    .banner{
+        &__img{
+            &__left{
+                &__content{
+                    h2{
+                        font-size: 18px;
+                    }
+                    .btn-shop{
+                        font-size: 12px;
+                        margin-left: 28%;
+                    }
+                }
+            }
+        }
+    }
+}
 @media all and (max-width: 376px){
     .banner{
         &__img{
             &__left{
                 &__content{
                     h2{
-                        font-size: 16px;
+                        font-size: 15px;
                     }
                     .btn-shop{
-                        font-size: 10px;
+                        font-size: 8px;
                         margin-left: 28%;
                     }
                 }
