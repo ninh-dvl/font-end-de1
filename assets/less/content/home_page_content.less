@@ -161,9 +161,12 @@
         border: none;
     }
     .card-img-top{
-        .card-img-overlay{
-            top: 59.5%;
-            left: 0.5%;
+        position: relative;
+        .card-img-overlayy{
+            position:absolute;
+            padding:0.3rem;
+            bottom: 0;
+            left: 0;
             .add-to-cart{
                 background-color:@white;
                 font-size: 12px;
@@ -285,14 +288,14 @@
                 display: block;
                 &--top{
                     height: 100%;
-                   
+                    padding-left: 0;
                     img{
                        width: 100%;
 
                     }
                 }
                 &--bottom{
-                  
+                  padding-right: 0;
                     img{
                         height: 60%;
                         width: 100%;
@@ -358,6 +361,10 @@
                 margin-top:3%;
                 &--top{
                     margin-bottom: 3%;
+                    padding: 0;
+                }
+                &--bottom{
+                    padding: 0;
                 }
             }
         }
