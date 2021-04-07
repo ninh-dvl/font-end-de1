@@ -16,8 +16,8 @@
 
 @import './base/_header.less';
 @import './base/_footer.less';
-@import './content/blog_content.less';
-@import './content/home_page_content.less';
+@import './content/_blog_content.less';
+@import './content/_home_page_content.less';
 @import './common/configskin/_skin.less';
 
 *{
@@ -28,6 +28,12 @@
 body{
     font-family: @font-mont;
     
+}
+.flex-box{
+    display: -webkit-flexbox;
+       display: -moz-flexbox;
+        display: -ms-flexbox;
+               display: flex;
 }
 
 

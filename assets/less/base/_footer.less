@@ -91,12 +91,9 @@
                 }
                 a:hover{
                     color: @white;
-                    text-decoration: none;
+                    text-decoration: revert;
                 }
-                .active{
-                    color:@white;
-                  
-                }
+             
                
             }
             &--right{
@@ -235,6 +232,16 @@
                 }
             }
         }
+        &__aboutus{
+            &__content{
+                margin: 4% 0px;
+            }
+            &__icon{
+                ul{
+                    margin-top: 3%;
+                }
+            }
+        }
     }
 }
 @media all and(max-width: 577px){
@@ -252,6 +259,11 @@
             }
         }
         &__address{
+            ul {
+                margin: 19px 0px;
+                line-height: 46px;
+                font-size: 13px;         
+            }
             .address{
                 ul{
                     li{
@@ -278,7 +290,7 @@
         &__address{
            
             ul {
-                margin: 22px 0px;
+                margin: 20px 0px;
                 line-height: 43px;
                 font-size: 13px;         
             }
