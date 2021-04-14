@@ -10,7 +10,7 @@
          background-color: @text-color;
          height: 1px;
          position: absolute;
-         transform: translateY(15px) translateX(545px);
+       .transform(545px,15px);
       }
       h6{
          font-size: 13px;
@@ -36,7 +36,7 @@
       .slick-dots {
          margin:-2% 0;
          li{
-            transform: scale(2);
+            .transform-scale(2);
             margin:0 1px;
             button:before{
                color: @text-color;
@@ -45,7 +45,7 @@
          li.slick-active {
             button:before{
                color: @text-color;
-               transform: scale(1.3);
+               .transform-scale(1.3);
             }
            
          }

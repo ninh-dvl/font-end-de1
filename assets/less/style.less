@@ -35,6 +35,21 @@ body{
         display: -ms-flexbox;
                display: flex;
 }
+.transform (@_x, @_y){
+    -webkit-transform: translate(@_x, @_y);
+       -moz-transform: translate(@_x, @_y);
+        -ms-transform: translate(@_x, @_y);
+         -o-transform: translate(@_x, @_y);
+            transform: translate(@_x, @_y);
+}
+.transform-scale (@_value){
+    -webkit-transform: scale(@_value);
+       -moz-transform: scale(@_value);
+        -ms-transform: scale(@_value);
+         -o-transform: scale(@_value);
+            transform: scale(@_value);
+}
+
 
 
 

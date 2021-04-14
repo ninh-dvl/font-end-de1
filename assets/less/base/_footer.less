@@ -99,6 +99,7 @@
             &--right{
                 padding: 0 6px;
             }
+            
         }
     }
     &__address{
@@ -136,6 +137,10 @@
                 li{
                     margin: -1px 0;
                 }
+            }
+            .phone{
+                margin-top: 24px;
+                 font-size: 12px;
             }
         }
         .address {
@@ -198,6 +203,11 @@
             .line2{
                 width: 100%;
             }
+            &__content{
+                &--left{
+                    padding-left: 0;
+                }
+            }
         }
         &__address{
             .line3{
@@ -209,6 +219,9 @@
                         margin: 2% -8%;
                     }
                 }
+            }
+            .address--icon{
+                padding-left: 0;
             }
         }
         &--top,&--bottom{
@@ -242,6 +255,18 @@
                 }
             }
         }
+    
+    }
+}
+@media all and(max-width:768px){
+    .footer{
+        &__address{
+            .address--icon{
+                .phone{
+                    margin-top: 13px;
+                }
+            }
+        }
     }
 }
 @media all and(max-width: 577px){
@@ -267,7 +292,7 @@
             .address{
                 ul{
                     li{
-                        margin:3% -8%;
+                        margin:5% -8%;
                     }
                 }
             }
@@ -295,8 +320,18 @@
                 font-size: 13px;         
             }
            
-          
-            
+          .address{
+              ul{
+                  li{
+                    margin: 2% -8%;
+                  }
+              }
+          }
+          .address--icon{
+              .phone{
+                margin-top:20px;
+              }
+          }
         }
     }
    
